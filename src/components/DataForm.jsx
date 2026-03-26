@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function DataForm() {
   const [name, setName] = useState('');
@@ -32,8 +32,11 @@ function DataForm() {
   }
 
   function handleReset() {
-    setName(''); setEmail(''); setPhone('');
-    setDob(''); setAddress('');
+    setName('');
+    setEmail('');
+    setPhone('');
+    setDob('');
+    setAddress('');
     setErrors({});
     setSubmitted(false);
   }
@@ -106,9 +109,9 @@ function DataForm() {
           <textarea
             placeholder="Enter your address"
             value={address}
+            rows={3}
             onChange={e => { setAddress(e.target.value); setErrors({...errors, address: ''}); }}
             className={errors.address ? 'error-input' : ''}
-            rows={3}
           />
           {errors.address && <p className="err">{errors.address}</p>}
         </div>
