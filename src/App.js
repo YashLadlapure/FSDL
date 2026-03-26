@@ -1,3 +1,4 @@
+import React from 'react';
 import DataForm from './components/DataForm';
 import './App.css';
 
