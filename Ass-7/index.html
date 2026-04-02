@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineplex Ticket Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="booking-card p-4 shadow">
+            <h1 id="main-title">Movie Ticket Booking</h1>
+            <p class="text-center text-muted">Select your movie and book your seats below.</p>
+            
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Select Movie:</label>
+                        <select class="form-select">
+                            <option>Inception (Sci-Fi)</option>
+                            <option>The Dark Knight (Action)</option>
+                            <option>Interstellar (Adventure)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Number of Seats:</label>
+                        <input type="number" class="form-control" min="1" max="10" value="1">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Your Email:</label>
+                    <input type="email" class="form-control" placeholder="name@example.com">
+                </div>
+
+                <table class="table table-hover mt-4">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Ticket Type</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>$12.00</td>
+                        </tr>
+                        <tr>
+                            <td>VIP (Recliner)</td>
+                            <td>$20.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="submit" class="btn btn-danger w-100 mt-3">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

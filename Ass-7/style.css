@@ -1,0 +1,31 @@
+/* Tag Selector (Source 253) */
+body {
+    background-color: #121212; /* Dark theme for a cinema feel */
+    color: #ffffff;
+    margin: 30px; /* Source 249 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Class Selector (Source 254) */
+.booking-card {
+    background-color: #1e1e1e;
+    border: 1px solid #ff0000; /* Red border property (Source 248) */
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 0 auto; /* Center alignment */
+    padding: 25px; /* Source 250 */
+}
+
+/* ID Selector (Source 255) */
+#main-title {
+    text-align: center;
+    color: #e50914; /* Netflix-style red */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form Label styling */
+label {
+    font-weight: bold;
+    color: #cccccc;
+}
